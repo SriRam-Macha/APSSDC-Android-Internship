@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/top"
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/username"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_below="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

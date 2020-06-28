@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:background="#0296FF"
+                android:id="@+id/A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 Point" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:background="#0296FF"
+                android:id="@+id/A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2 Points" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:background="#0296FF"
+                android:id="@+id/A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 Points" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/team_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:background="#0296FF"
+                    android:layout_margin="10dp"
+                    android:id="@+id/B1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 Point" />
+
+                <Button
+                    android:background="#0296FF"
+                    android:layout_margin="10dp"
+                    android:id="@+id/B2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+2 Points" />
+
+                <Button
+                    android:background="#0296FF"
+                    android:layout_margin="10dp"
+                    android:id="@+id/B3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+3 Points" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

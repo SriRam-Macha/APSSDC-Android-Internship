@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/Register"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/Register"
+        android:id="@+id/usernameR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/usernameR"
+        android:id="@+id/passwordR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:layout_below="@id/passwordR"
+        android:hint="Enter Mail ID"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Phonenum"
+        android:layout_below="@id/mail"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        />
+
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_below="@+id/Phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/registerR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
